@@ -18,3 +18,13 @@ jobs:
       run: |
           docker build . --file Dockerfile --tag my-image-name:$(date +%s)
           docker images -a
+          
+  deploy:
+
+    runs-on: self-hosted
+    environment: dev
+
+    steps:
+    - name: Print the Docker image
+      run: |
+          echo my-image-name:$(date +%s)
