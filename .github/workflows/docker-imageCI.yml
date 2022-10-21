@@ -28,4 +28,4 @@ jobs:
     steps:
     - name: Print the Docker image
       run: |
-          echo my-image-name:$(date +%s)
+          echo "Hello Dev"
