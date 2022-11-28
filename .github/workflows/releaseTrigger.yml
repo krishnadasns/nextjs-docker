@@ -1,0 +1,18 @@
+name: ReleaseTrigger
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Message
+      run: |
+          echo "Trigger Ok"
