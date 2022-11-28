@@ -19,4 +19,4 @@ jobs:
           echo ${GITHUB_SHA:0:7}
     - name: Release Message
       run: |
-          echo ${GITHUB_REF:9}
+          echo ${GITHUB_REF:10}
