@@ -14,6 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Message
+    - name: Commit Message
       run: |
-          echo $SHORT_SHA
+          echo $GITHUB_SHA
+    - name: Release Message
+      run: |
+          echo $GITHUB_REF
